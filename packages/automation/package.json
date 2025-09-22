@@ -1,5 +1,5 @@
 {
-  "name": "@ai-testing-agent/core",
+  "name": "@ai-testing-agent/automation",
   "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -12,9 +12,11 @@
   },
   "scripts": {
     "build": "tsc",
+    "dev": "tsc --watch",
     "clean": "rm -rf dist"
   },
   "dependencies": {
+    "@ai-testing-agent/core": "workspace:*",
     "playwright": "^1.40.0"
   },
   "devDependencies": {
