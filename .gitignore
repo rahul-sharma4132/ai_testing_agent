@@ -137,3 +137,158 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# ==================================
+# AI Testing Agent Specific
+# ==================================
+
+# Build outputs
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Test artifacts and results
+test-results/
+test-reports/
+coverage/
+screenshots/
+videos/
+artifacts/
+*.har
+*.trace
+
+# Playwright specific
+playwright-report/
+test-results/
+playwright/.cache/
+
+# Browser downloads and cache
+downloads/
+browser-cache/
+.cache/
+
+# AI/ML model files
+*.model
+*.pkl
+*.h5
+*.pb
+models/
+checkpoints/
+
+# Test data and fixtures
+test-data/
+fixtures/
+mock-data/
+*.sql.bak
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+data/
+db/
+
+# Configuration files with secrets
+config.local.*
+config.production.*
+.env.local
+.env.production
+.env.development
+.env.test
+secrets.json
+credentials.json
+
+# Application discovery cache
+discovery-cache/
+crawl-cache/
+.discovery/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+*.tmp
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# IDE files
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Turbo
+.turbo/
+
+# pnpm
+.pnpm-debug.log*
+
+# Documentation builds
+docs/build/
+docs/.docusaurus/
+
+# Logs specific to testing
+selenium-debug.log
+geckodriver.log
+chromedriver.log
+test.log
+
+# Performance monitoring
+*.perf
+performance-results/
+
+# Security scan results
+security-scan-results/
+vulnerability-reports/
+
+# PDF documents (project specific)
+# Uncomment if you don't want to track PDFs
+# *.pdf
+
+# Backup files
+*.backup
+*.bak
+*.orig
