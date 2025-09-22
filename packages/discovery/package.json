@@ -1,0 +1,28 @@
+{
+    "name": "@ai-testing-agent/discovery",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      }
+    },
+    "scripts": {
+      "build": "tsc",
+      "dev": "tsc --watch",
+      "clean": "rm -rf dist"
+    },
+    "dependencies": {
+      "@ai-testing-agent/core": "workspace:*",
+      "playwright": "^1.40.0",
+      "cheerio": "^1.0.0-rc.12",
+      "axios": "^1.6.0"
+    },
+    "devDependencies": {
+      "typescript": "^5.9.2",
+      "@types/cheerio": "^0.22.0"
+    }
+  }

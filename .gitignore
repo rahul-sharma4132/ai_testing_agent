@@ -148,6 +148,9 @@ build/
 out/
 *.tsbuildinfo
 
+# Root level dist (accidental builds)
+/dist/
+
 # Test artifacts and results
 test-results/
 test-reports/
@@ -285,10 +288,27 @@ security-scan-results/
 vulnerability-reports/
 
 # PDF documents (project specific)
-# Uncomment if you don't want to track PDFs
-# *.pdf
+# Keep important PDFs but ignore generated ones
+nodejs-dev-ref.pdf
+*.pdf.bak
 
 # Backup files
 *.backup
 *.bak
 *.orig
+
+# Lock files (keep pnpm-lock.yaml but ignore others)
+package-lock.json
+yarn.lock
+
+# Editor and system files
+.vscode/settings.json
+.vscode/launch.json
+
+# Development artifacts
+*.log.old
+*.log.[0-9]*
+
+# Generated documentation
+docs/api/
+docs/generated/
