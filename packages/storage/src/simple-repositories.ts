@@ -1,11 +1,11 @@
 // Simplified repositories to avoid complex Drizzle type issues
 import { Logger } from '@ai-testing-agent/core';
-import { Database } from './database.js';
+import type { DrizzleDatabase } from './database.js';
 
 export class SimpleApplicationRepository {
   private logger = new Logger('SimpleApplicationRepository');
 
-  constructor(_db: Database) {
+  constructor(_db: DrizzleDatabase) {
     // Database connection will be used in future implementation
   }
 
@@ -31,7 +31,7 @@ export class SimpleApplicationRepository {
 export class SimpleTestCaseRepository {
   private logger = new Logger('SimpleTestCaseRepository');
 
-  constructor(_db: Database) {
+  constructor(_db: DrizzleDatabase) {
     // Database connection will be used in future implementation
   }
 
@@ -57,7 +57,7 @@ export class SimpleTestCaseRepository {
 export class SimpleTestExecutionRepository {
   private logger = new Logger('SimpleTestExecutionRepository');
 
-  constructor(_db: Database) {
+  constructor(_db: DrizzleDatabase) {
     // Database connection will be used in future implementation
   }
 
