@@ -289,7 +289,7 @@ vulnerability-reports/
 
 # PDF documents (project specific)
 # Keep important PDFs but ignore generated ones
-nodejs-dev-ref.pdf
+*.pdf
 *.pdf.bak
 
 # Backup files
