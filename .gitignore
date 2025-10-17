@@ -151,6 +151,23 @@ out/
 # Root level dist (accidental builds)
 /dist/
 
+# Apps directory - allow source files but ignore build artifacts
+# Allow apps source and config files
+!apps/
+!apps/*/
+!apps/*/src/
+!apps/*/src/**
+!apps/*/*.json
+!apps/*/*.js
+!apps/*/*.ts
+!apps/*/*.config.*
+!apps/*/*.md
+# But still ignore build artifacts in apps
+apps/*/dist/
+apps/*/build/
+apps/*/node_modules/
+apps/*/.turbo/
+
 # Test artifacts and results
 test-results/
 test-reports/
